@@ -1,0 +1,37 @@
+.myCover{
+    background-image: url('../img/cover.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    .content-cover{
+        background-color: $color-white-0;
+        width: 400px;
+        height: 310px;
+        position: absolute;
+        top: 80px;
+        left: 150px;
+        padding:20px;
+        margin:20px;
+        border: 2px solid $color-gray-4;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        .input-group{
+            padding: 20px 0 0 0;
+            .form-control{
+                border-right: none;
+                &:focus{
+                    border: 1px solid #ced4da;
+                    border-right:none;
+                    box-shadow: none;
+                }
+            }
+            .input-group-append{
+                .input-group-text{
+                    border-left: none;
+                    background-color:$color-white-0;
+                }
+            }
+        }
+    }
+}

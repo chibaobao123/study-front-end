@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px; }
+
+.myNavbar {
+  border-bottom: 1px solid #cacbcc; }
+  .myNavbar .navbar-brand img {
+    width: 80px;
+    height: 40px; }
+  .myNavbar .categories {
+    color: #505763;
+    font-size: 13px;
+    font-weight: normal;
+    align-self: center;
+    padding: 10px; }
+  .myNavbar .inputSearch {
+    flex-grow: 5;
+    align-self: center; }
+    .myNavbar .inputSearch .input-group {
+      box-sizing: border-box; }
+      .myNavbar .inputSearch .input-group .form-control {
+        border-left: none;
+        box-shadow: none;
+        border-radius: 0 20px 20px 0;
+        padding: 20px 20px 20px 5px; }
+        .myNavbar .inputSearch .input-group .form-control:focus {
+          border: 1px solid #ced4da;
+          border-left: none; }
+      .myNavbar .inputSearch .input-group .input-group-append button {
+        color: #686f7a;
+        background-color: #ffffff;
+        border: 1px solid #ced4da;
+        border-right: none;
+        border-radius: 20px 0 0 20px; }
+  .myNavbar .navbar-collapse .nav-item .nav-link {
+    vertical-align: inherit;
+    color: #686f7a;
+    font-size: 15px;
+    font-weight: normal; }
+  .myNavbar .navbar-collapse .nav-item .button {
+    padding: 0 15px; }
+    .myNavbar .navbar-collapse .nav-item .button .btn-login {
+      background-color: #ffffff;
+      border: 1px solid #007791;
+      color: #007791; }
+    .myNavbar .navbar-collapse .nav-item .button .btn-register {
+      background-color: #007791;
+      border: 1px solid #007791;
+      color: #ffffff; }
+    .myNavbar .navbar-collapse .nav-item .button .btn-icon-global {
+      background-color: #ffffff;
+      border: 1px solid #686f7a;
+      padding: 3px 10px;
+      color: #29303b;
+      font-size: 20px;
+      font-weight: 700; }
+  .myNavbar .navbar-collapse .icon-cart {
+    align-self: center;
+    margin: 2px 10px; }
+    .myNavbar .navbar-collapse .icon-cart .cart-link {
+      color: #29303b;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-top: 10px; }
+      .myNavbar .navbar-collapse .icon-cart .cart-link:hover {
+        color: #007791; }
+  @media screen and (max-width: 1364px) {
+    .myNavbar .navbar-collapse .navbar-nav .business, .myNavbar .navbar-collapse .navbar-nav .teachUdemy {
+      display: none !important; } }
+  @media screen and (max-width: 992px) {
+    .myNavbar .navbar-collapse .icon-cart {
+      margin: 5px !important;
+      padding: 0px !important; }
+    .myNavbar .navbar-collapse .navbar-nav .nav-item .button {
+      padding-left: 0px;
+      padding-right: 0px; } }
+  @media screen and (max-width: 992px) {
+    .myNavbar .categories {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    .myNavbar .input-group {
+      display: none; } }
+
+.myCover {
+  background-image: url("../img/cover.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative; }
+  .myCover .content-cover {
+    background-color: #ffffff;
+    width: 400px;
+    height: 310px;
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #686f7a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .myCover .content-cover .input-group {
+      padding: 20px 0 0 0; }
+      .myCover .content-cover .input-group .form-control {
+        border-right: none; }
+        .myCover .content-cover .input-group .form-control:focus {
+          border: 1px solid #ced4da;
+          border-right: none;
+          box-shadow: none; }
+      .myCover .content-cover .input-group .input-group-append .input-group-text {
+        border-left: none;
+        background-color: #ffffff; }
+
+.content-1 {
+  margin: 50px 50px 0 75px; }
+  .content-1 p {
+    color: #686f7a;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 10px 0; }
+
+.nav-title-teach {
+  margin: 30px 50px;
+  padding: 0; }
+  .nav-title-teach .navTitle .btn {
+    text-decoration: none;
+    color: #505763;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 30px;
+    background-color: #ffffff;
+    border: none; }
+    .nav-title-teach .navTitle .btn:focus {
+      border: none;
+      background-color: none;
+      box-shadow: none; }
+
+.information {
+  width: 100%;
+  height: 110%;
+  border: 1px solid #777171;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 30px;
+  padding-right: 0px; }
+  .information .content-info {
+    position: relative; }
+    .information .content-info .portrait-img {
+      position: absolute;
+      top: 15px;
+      right: -110px; }
+    .information .content-info .card-info {
+      padding: 30px 70px 30px 20px;
+      margin-top: 50px; }
+      .information .content-info .card-info .card {
+        margin: 40px 5px 20px 0;
+        padding: 0px; }
+
+/*# sourceMappingURL=style.css.map */

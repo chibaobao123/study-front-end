@@ -1,0 +1,19 @@
+.nav-title-teach{
+    margin: 30px 50px;
+    padding: 0;
+    .navTitle{
+        .btn{
+            text-decoration: none;
+            @include text($color-black-light,$fs-2 - 2,$fw-bold-0);
+            padding: 0 30px;
+            background-color: $color-white-0;
+            border: none;
+            &:focus
+            {
+                border: none;
+                background-color: none;
+                box-shadow: none;
+            }
+        }
+    }
+}

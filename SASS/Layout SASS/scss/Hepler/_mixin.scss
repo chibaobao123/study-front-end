@@ -1,0 +1,13 @@
+@mixin text($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin respond-to($breackpoint){
+    @if map-has-key($map: $breakpoints, $key: $breackpoint){
+        $value: map-get($map: $breakpoints, $key: $breackpoint);
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.myNavbar{
+    border-bottom:  1px solid $color-gray-3;
+    .navbar-brand{
+        img{
+            width: 80px;
+            height: 40px;
+        }
+    }
+    .categories {
+        @include text($color-black-light,$fs-1 - 2,$fw-normal);
+        align-self: center;
+        padding:$pd-1;
+    }
+    .inputSearch{
+        flex-grow: 5;
+        align-self: center;
+        .input-group{
+            box-sizing: border-box;
+            .form-control{
+                border-left: none;
+                box-shadow: none;
+                border-radius: 20px 0 0 20px;
+                padding: $pd-3 $pd-3 $pd-3 $pd-0;
+                &:focus{
+                    border: 1px solid #ced4da;
+                    border-left: none;
+                }
+            }
+            .input-group-append{
+                button{
+                    color:$color-gray-4;
+                    background-color:$color-white-0;
+                    border: 1px solid #ced4da;
+                    border-right: none;
+                    border-radius: 20px 0 0 20px;
+                }
+            }
+        }
+    }
+    .navbar-collapse{
+        .nav-item{
+            .nav-link{
+                vertical-align: inherit;
+                @include text($color-gray-4,$fs-1,$fw-normal);
+            }
+            .button{
+                padding: 0 $pd-2;
+                .btn-login{
+                    background-color:$color-white-0;
+                    border:1px solid $color-blue;
+                    color:$color-blue
+                }
+                .btn-register{
+                    background-color:$color-blue;
+                    border:1px solid $color-blue;
+                    color:$color-white-0;
+                }
+                .btn-icon-global{
+                    background-color:$color-white-0;
+                    border:1px solid $color-gray-4;
+                    padding: $pd-0 - 2  $fs-o;
+                    @include text($color-black-0,$fs-2,$fw-boold-1);
+                }
+            }
+        }
+        .icon-cart{
+            align-self: center;
+            margin: $mg-1 $mg-2;
+            .cart-link{
+                @include text($color-black-0,$fs-2,$fw-boold-1);
+                line-height: 1.2;
+                margin-top: $mg-2;
+                &:hover{
+                    color: $color-blue;
+                }
+            }
+        }
+        @include respond-to('extra-large'){
+            .navbar-nav{
+                .business , .teachUdemy{
+                    display:none !important; 
+                }
+            }
+        }
+        @include respond-to('medium'){
+            .icon-cart{
+                margin: 5px !important;
+                padding: 0px !important;
+            }
+            .navbar-nav{
+                .nav-item{
+                   .button{
+                       padding-left: 0px;
+                        padding-right: 0px;
+                   } 
+                }   
+            }
+        }
+    }
+    @include respond-to('medium'){
+        .categories{
+            display:none;
+        }
+    }
+    @include respond-to('small'){
+        .input-group{
+            display:none;
+        }
+    }
+}
